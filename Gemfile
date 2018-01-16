@@ -63,6 +63,10 @@ group :development, :test do
 end
 
 group :test do
+<<<<<<< HEAD
+=======
+  gem 'selenium-webdriver'
+>>>>>>> dev
   gem 'rspec'
   gem 'cucumber'
   gem 'capybara'
