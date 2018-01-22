@@ -1,6 +1,10 @@
 Feature: I am able to view and change my subscritpions
 
+<<<<<<< HEAD
   Scenario: I am able to add and remove subsriptions when neccesary
+=======
+  Scenario: I am able to add and remoe subsriptions when neccesary
+>>>>>>> dev
 
     Given I have the sidebar open
     When I have clicked manage subscriptions
