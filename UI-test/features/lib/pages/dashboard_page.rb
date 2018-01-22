@@ -21,9 +21,13 @@ class DashBoardPage
     find(SIDEBAR)
   end
 
-  def click_name_link
+  def find_name_link
     sideBarDiv = find_sidebar
-    sideBarDiv.find('a').click
+    sideBarDiv.find('a')
+  end
+
+  def click_name_link
+    find_name_link.click
   end
 
   def click_course
