@@ -1,9 +1,9 @@
-Given("I am on the homepage") do
-  homepage.visit_home_page
-  sleep 1
-end
+# Given("I am on the homepage") do
+#   homepage.visit_home_page
+#   sleep 1
+# end
 
-Given("I have clicked on the sign in link") do
+And("I have clicked on the sign in link") do
   sign_in_page.sign_in_link
   sleep 1
 end
@@ -30,5 +30,9 @@ end
 
 And("a sidebar on the left hand side") do
   navbar.click_menu
+  sleep 4
+  sign_in_page.sign_out_func
+  sleep 4
+  github_logout_page.github_logout_func
   sleep 4
 end
