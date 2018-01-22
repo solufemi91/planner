@@ -26,6 +26,10 @@ class DashBoardPage
     find(ASIDE)
   end
 
+  def aside_visible?
+    find_aside.visible?
+  end
+
   def find_name_link
     sideBarDiv = find_sidebar
     sideBarDiv.find('a')
