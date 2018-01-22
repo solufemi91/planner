@@ -8,6 +8,7 @@ class DashBoardPage
   COURSE_LINK = 'Course' unless const_defined?(:COURSE_LINK)
   MEETING_LINK = 'Meeting' unless const_defined?(:MEETING_LINK)
   EVENT_LINK = 'Event' unless const_defined?(:EVENT_LINK)
+  ASIDE = '.left-off-canvas-menu'
 
   def visit_dashboard_page
     visit(VISIT_DASHBOARD_PAGE)
@@ -19,6 +20,10 @@ class DashBoardPage
 
   def find_sidebar
     find(SIDEBAR)
+  end
+
+  def find_aside
+    find(ASIDE)
   end
 
   def find_name_link

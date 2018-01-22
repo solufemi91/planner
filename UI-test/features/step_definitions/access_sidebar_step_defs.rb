@@ -8,11 +8,14 @@ Given("I am on my dashboard page") do
 end
 
 When("I click on the menu button") do
+  dashboard_page.find_aside
+  sleep 4
   # sign_in_page.open_sidebar_menu
   # sleep 1
 end
 
 Then("the side bar should appear") do
-  expect(dashboard_page.aside_visible?).to eq true
-  sleep 5
+  # expect(dashboard_page.aside_visible?).to eq true
+  # sleep 5
+  pending
 end
