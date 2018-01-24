@@ -21,7 +21,5 @@ end
 Then("I should be redirected to the github sign up page") do
   expect(current_url).to include('https://github.com/join?')
   # sleep 3
-  sign_in_page.confirm_redirection_dashboard
-  sign_in_page.sign_out_func
-  github_logout_page.github_logout_func
+
 end
